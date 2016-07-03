@@ -1,3 +1,6 @@
+#ignore changes to config.avs as this happens with every video made
+config.avs
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
