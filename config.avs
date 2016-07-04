@@ -1,5 +1,5 @@
 t="title text"
-s="subtitle1 \nsubtitle2"
-b="banner text"
-# currently only .mov files are supported
+s="subtitle1\nsubtitle2"
 name="path\to\video.mov"
+b=true
+banner="banner text"

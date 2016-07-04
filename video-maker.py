@@ -56,7 +56,11 @@ options = parser.parse_args()
 # main Logic
 # write config options to config.avs
 f = open('config.avs','w+')
-f.write('t="{0}"\ns="{1}"\nname="{2}"\nb="{3}"'.format(options.title, options.subtitle, options.video, options.banner))
+f.write('t="{0}"\ns="{1}"\nname="{2}"\n'.format(options.title, options.subtitle, options.video))
+if options.banner:
+	f.write('b=true\nbanner="{0}"'.format(options.banner))
+else:
+	f.write('b=false\n')
 f.close()
 print("File config-test.avs written, calling ffmpeg")
 # call ffmpeg to transcode the file for us
